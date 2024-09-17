@@ -1,2 +1,2 @@
 # Supply-Chain-DAPP
-A simple Pharmaceutical Supply Chain DAPP
+A Block Chain Based  Pharmaceutical Supply Chain DAPP
