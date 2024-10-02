@@ -5,7 +5,6 @@
 A comprehensive supply chain management solution leveraging blockchain technology and IoT integration for enhanced data integrity and tamper-proof operations.
 
 ## 👥 Contributors
-- **Zohra Shaikh**
 - **Ahmed Faraz** - [GitHub](https://github.com/ahmed00faraz)
 
 ## 🎯 Overview
