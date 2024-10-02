@@ -1,6 +1,6 @@
 # Blockchain-Powered Supply Chain Management System
 
-[![Supply-Chain-Dapp](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/Home_rjofjb.png)
+![Supply-Chain-Dapp](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/Home_rjofjb.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -122,3 +122,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Screenshots
+
+![Supply-Chain-Dapp](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/status_uppvzv.png)
+
+![Supply-Chain-Dapp](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/Data_qygjvu.png)
+
+![Supply-Chain-Dapp](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/Products_lekybe.png)
+
+![Supply-Chain-Dapp](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/Data_qygjvu.png)
