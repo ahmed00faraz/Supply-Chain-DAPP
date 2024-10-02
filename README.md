@@ -1,6 +1,6 @@
 # Blockchain-Powered Supply Chain Management System
 
-[![Supply-Chain-Dapp]([https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/Home_rjofjb.png))
+[![Supply-Chain-Dapp](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/Home_rjofjb.png))
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
