@@ -1,86 +1,124 @@
-# Smart Contract-Based Supply Chain Management for Data Integrity and Anti-Tampering
+# Blockchain-Powered Supply Chain Management System
 
-This project was developed collaboratively by **Zohra Shaikh** and **Ahmed Faraz** ([GitHub: ahmed00faraz](https://github.com/ahmed00faraz)). It is a robust solution aimed at enhancing supply chain transparency and security through the integration of blockchain technology and IoT for data integrity and anti-tampering.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
----
+A comprehensive supply chain management solution leveraging blockchain technology and IoT integration for enhanced data integrity and tamper-proof operations.
 
-## Project Overview
+## 👥 Contributors
+- **Zohra Shaikh**
+- **Ahmed Faraz** - [GitHub](https://github.com/ahmed00faraz)
 
-The **Smart Contract-Based Supply Chain Management** system ensures data integrity and tamper prevention by utilizing blockchain technology on the Ethereum network. The project consists of:
+## 🎯 Overview
 
-- **Smart Contracts** (Solidity on Ethereum)
-- **IoT Sensors** (Arduino with DHT11)
-- **Frontend** (React.js and Ethers.js)
-- **Backend** (FastAPI)
+This enterprise-grade solution combines blockchain technology with IoT capabilities to revolutionize supply chain transparency and security. By implementing smart contracts on the Ethereum network, we ensure immutable record-keeping and real-time tracking of supply chain operations.
 
-### Important Information
+### Core Components
 
-**Ropsten testnet is deprecated**. Please use the **Goerli network** for testing.
+- **Smart Contract Layer**: Ethereum-based contracts written in Solidity
+- **IoT Integration**: Arduino implementation with DHT11 sensor arrays
+- **Frontend Interface**: Modern React.js application with Ethers.js integration
+- **Backend Services**: High-performance FastAPI implementation
 
-- **Smart Contract**: [View on Etherscan (Goerli)](https://goerli.etherscan.io/address/0xE4b876ed393E19FbD18eC99118647BcbFE5300F3#code)
-- **Frontend Demo**: [psupplychain.netlify.app](https://psupplychain.netlify.app/)
+## 🛠 Technology Stack
 
----
+### Blockchain Infrastructure
+- Ethereum Network
+- Solidity Smart Contracts
+- Hardhat Development Environment
 
-## Tech Stack
+### IoT Architecture
+- Arduino Microcontrollers
+- DHT11 Temperature & Humidity Sensors
+- Node-RED Integration Platform
 
-- **Blockchain**: Ethereum, Solidity, Hardhat
-- **IoT**: Arduino, DHT11 Sensor, Node-RED
+### Application Stack
 - **Backend**: FastAPI (Python)
 - **Frontend**: React.js, Ethers.js
+- **Development Tools**: Docker, MetaMask
 
----
+## 🚀 Deployment Information
 
-## How to Run the Project
+> **Important**: The system now operates on the Goerli testnet following Ropsten's deprecation.
 
-### 1. Backend Setup
+- **Smart Contract**: [View on Etherscan (Goerli)](https://goerli.etherscan.io/address/0xE4b876ed393E19FbD18eC99118647BcbFE5300F3#code)
+- **Live Demo**: [psupplychain.netlify.app](https://psupplychain.netlify.app/)
 
-- Install **MetaMask** and enable the Goerli testnet.
-- Obtain test ethers from a faucet (Goerli network).
-- Deploy the contract on **Polygon Mumbai Testnet** using **Remix IDE** or **Hardhat**.
-- Create an application on [Alchemy](https://alchemy.com) for **Polygon Mumbai** to obtain your API key:
+## 📦 Installation & Setup
 
-  ```text
-  https://polygon-mumbai.g.alchemy.com/v2/<your_key>
+### Backend Configuration
 
-# Update contract.py
-w3 = Web3(Web3.HTTPProvider('<your_alchemy_key>'))
-key = '<account-private-key>'
-account = w3.toChecksumAddress('<your-account-address>')
-address = w3.toChecksumAddress('<contract-address>')
+1. **Prerequisites**
+   ```bash
+   # Install dependencies
+   pip install -r requirements.txt
+   ```
 
-# Install required dependencies
-pip install -r requirements.txt
+2. **Environment Setup**
+   ```python
+   # Update contract.py with your credentials
+   w3 = Web3(Web3.HTTPProvider('<ALCHEMY_API_KEY>'))
+   key = '<PRIVATE_KEY>'
+   account = w3.toChecksumAddress('<ACCOUNT_ADDRESS>')
+   address = w3.toChecksumAddress('<CONTRACT_ADDRESS>')
+   ```
 
-# Run the backend using FastAPI
-uvicorn main:app --reload
+3. **Launch Backend**
+   ```bash
+   uvicorn main:app --reload
+   ```
+   Access the API documentation at `http://localhost:8000/docs`
 
-# The backend API is now accessible at http://localhost:8000/docs, where you can add workers, products, statuses, etc.
+### Frontend Setup
 
-# Frontend Setup (Client)
-# Navigate to the client folder and install dependencies
-npm install
+1. **Install Dependencies**
+   ```bash
+   cd client
+   npm install
+   ```
 
-# Update the contract address in client/components/Display.js
-const ContractAddress = '<your_contract_address>';
+2. **Configuration**
+   ```javascript
+   // Update contract address in client/components/Display.js
+   const ContractAddress = '<CONTRACT_ADDRESS>';
+   ```
 
-# Modify the homepage content by editing Home.js as necessary.
+3. **Launch Application**
+   ```bash
+   npm start
+   ```
+   Access the frontend at `http://localhost:3000`
 
-# Start the frontend
-npm start
+### IoT Configuration
 
-# The frontend will be running at http://localhost:3000.
+1. **Hardware Setup**
+   - Connect DHT11 sensor to Arduino board
+   - Configure serial communication via COM3
 
-# IoT Integration
-# Set up the DHT11 sensor with Arduino.
-# Use Node-RED to capture and transmit sensor data to the blockchain. Node-RED is a low-code programming tool for event-driven applications.
-# Data collected by the Arduino is sent via COM3 to Node-RED.
-# Import the provided JSON flow in Node-RED and modify as needed.
-# The flow ensures that sensor data is transmitted securely to the blockchain using APIs.
+2. **Node-RED Integration**
+   - Import provided flow configuration
+   - Configure data transmission endpoints
+   - Verify sensor data pipeline
 
-# Using Docker
-# Install Docker and modify environment variables (e.g., contract address).
-# Start the application using Docker Compose
-docker-compose up
+### Docker Deployment
 
-# Ensure the IoT setup is completed as described above.
+```bash
+# Build and launch containers
+docker-compose up --build
+
+# For background execution
+docker-compose up -d
+```
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
