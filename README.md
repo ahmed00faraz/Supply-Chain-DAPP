@@ -40,7 +40,6 @@ This enterprise-grade solution combines blockchain technology with IoT capabilit
 > **Important**: The system now operates on the Goerli testnet following Ropsten's deprecation.
 
 - **Smart Contract**: [View on Etherscan (Goerli)](https://goerli.etherscan.io/address/0xE4b876ed393E19FbD18eC99118647BcbFE5300F3#code)
-- **Live Demo**: [psupplychain.netlify.app](https://psupplychain.netlify.app/)
 
 ## 📦 Installation & Setup
 
