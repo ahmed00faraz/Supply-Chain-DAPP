@@ -1,7 +1,5 @@
 # Blockchain-Powered Supply Chain Management System
 
-![Supply-Chain-Dapp](https://res.cloudinary.com/dqfubcyuh/image/upload/v1727890961/Home_rjofjb.png)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive supply chain management solution leveraging blockchain technology and IoT integration for enhanced data integrity and tamper-proof operations.
